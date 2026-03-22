@@ -1,0 +1,15 @@
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/bin/Debug/net10.0/Exercise01.PrimeSevenSum
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/bin/Debug/net10.0/Exercise01.PrimeSevenSum.deps.json
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/bin/Debug/net10.0/Exercise01.PrimeSevenSum.runtimeconfig.json
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/bin/Debug/net10.0/Exercise01.PrimeSevenSum.dll
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/bin/Debug/net10.0/Exercise01.PrimeSevenSum.pdb
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/obj/Debug/net10.0/Exercise01.PrimeSevenSum.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/obj/Debug/net10.0/Exercise01.PrimeSevenSum.AssemblyInfoInputs.cache
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/obj/Debug/net10.0/Exercise01.PrimeSevenSum.AssemblyInfo.cs
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/obj/Debug/net10.0/Exercise01.PrimeSevenSum.csproj.CoreCompileInputs.cache
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/obj/Debug/net10.0/Exercise01.PrimeSevenSum.sourcelink.json
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/obj/Debug/net10.0/Exercise01.PrimeSevenSum.dll
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/obj/Debug/net10.0/refint/Exercise01.PrimeSevenSum.dll
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/obj/Debug/net10.0/Exercise01.PrimeSevenSum.pdb
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/obj/Debug/net10.0/Exercise01.PrimeSevenSum.genruntimeconfig.cache
+/Users/gonzaloquedena/Workspace/Dev/Csharp/one-dimensional-arrays/exercises/01-prime-seven-sum/Exercise01.PrimeSevenSum/obj/Debug/net10.0/ref/Exercise01.PrimeSevenSum.dll
