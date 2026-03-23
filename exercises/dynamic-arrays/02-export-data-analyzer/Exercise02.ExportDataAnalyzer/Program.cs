@@ -1,7 +1,3 @@
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-
 namespace Exercise02.ExportDataAnalyzer
 {
     public class ProductoExportacion
@@ -9,23 +5,23 @@ namespace Exercise02.ExportDataAnalyzer
         public string Pais { get; set; }
         public string Region { get; set; }
         public string Producto { get; set; }
-        public int Año { get; set; }
+        public int Anio { get; set; }
         public decimal Monto { get; set; }
         public double Peso { get; set; }
 
-        public ProductoExportacion(string pais, string region, string producto, int año, decimal monto, double peso)
+        public ProductoExportacion(string pais, string region, string producto, int anio, decimal monto, double peso)
         {
             Pais = pais;
             Region = region;
             Producto = producto;
-            Año = año;
+            Anio = anio;
             Monto = monto;
             Peso = peso;
         }
 
         public override string ToString()
         {
-            return $"{Pais}, {Region}, {Producto}, {Año}, ${Monto:N2}, {Peso}MT";
+            return $"{Pais}, {Region}, {Producto}, {Anio}, ${Monto:N2}, {Peso}MT";
         }
     }
 
@@ -33,15 +29,13 @@ namespace Exercise02.ExportDataAnalyzer
     {
         static void Main()
         {
-            Console.WriteLine("=== Export Data Analyzer ===\n");
-
             List<ProductoExportacion> productos;
 
             string csvPath = "../ProductosExportacion.csv";
             
             if (File.Exists(csvPath))
             {
-                Console.WriteLine($"Loading data from: {csvPath}\n");
+                Console.WriteLine($"\nLoading data from: {csvPath}\n");
                 productos = CargarDatosDesdeCSV(csvPath);
             }
             else
@@ -94,16 +88,12 @@ namespace Exercise02.ExportDataAnalyzer
                             string pais = values[0].Trim();
                             string region = values[1].Trim();
                             string producto = values[2].Trim();
-                            
-                            int año;
-                            decimal monto;
-                            double peso;
 
-                            if (int.TryParse(values[3].Trim(), out año) &&
-                                decimal.TryParse(values[4].Trim(), out monto) &&
-                                double.TryParse(values[5].Trim(), out peso))
+                            if (int.TryParse(values[3].Trim(), out int anio) &&
+                                decimal.TryParse(values[4].Trim(), out decimal monto) &&
+                                double.TryParse(values[5].Trim(), out double peso))
                             {
-                                productos.Add(new ProductoExportacion(pais, region, producto, año, monto, peso));
+                                productos.Add(new ProductoExportacion(pais, region, producto, anio, monto, peso));
                             }
                         }
                     }
@@ -145,7 +135,7 @@ namespace Exercise02.ExportDataAnalyzer
         static void MostrarProductoLider2024(List<ProductoExportacion> productos)
         {
             var productoLider = productos
-                .Where(p => p.Año == 2024)
+                .Where(p => p.Anio == 2024)
                 .GroupBy(p => p.Producto)
                 .Select(g => new
                 {
@@ -172,23 +162,23 @@ namespace Exercise02.ExportDataAnalyzer
 
         static void MostrarConteoNorteamerica(List<ProductoExportacion> productos)
         {
-            var conteoPorAño = productos
+            var conteoPorAnio = productos
                 .Where(p => p.Region == "Norteamérica")
-                .GroupBy(p => p.Año)
+                .GroupBy(p => p.Anio)
                 .Select(g => new
                 {
-                    Año = g.Key,
+                    Anio = g.Key,
                     Cantidad = g.Count()
                 })
-                .OrderBy(x => x.Año);
+                .OrderBy(x => x.Anio);
 
             Console.WriteLine("\n" + new string('=', 50));
             Console.WriteLine("3. Annual Product Count in North America:");
             Console.WriteLine(new string('=', 50));
 
-            foreach (var item in conteoPorAño)
+            foreach (var item in conteoPorAnio)
             {
-                Console.WriteLine($"   {item.Año}: {item.Cantidad} product(s)");
+                Console.WriteLine($"   {item.Anio}: {item.Cantidad} product(s)");
             }
         }
 
